@@ -1,26 +1,401 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1611" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="0CA-a7-YoE">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <scene sceneID="eH3-Y2-PL7">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fB5-Rs-kvr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="0CA-a7-YoE" customClass="ViewController" customModule="GiovanniKastanja_pset1" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="cKv-DJ-zAK"/>
+                        <viewControllerLayoutGuide type="bottom" id="qmv-XZ-0F4"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="vBg-sq-3kq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="bUe-2s-3Dz">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Emj-CJ-20x">
+                                        <rect key="frame" x="126" y="0.0" width="123.5" height="20"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mr. Potato Head" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Ga-E1-sAT">
+                                                <rect key="frame" x="0.0" y="0.0" width="123.5" height="20"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="dCP-yS-7HT"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="YXU-uJ-Ndv">
+                                        <rect key="frame" x="4" y="20" width="367" height="427"/>
+                                        <subviews>
+                                            <view autoresizesSubviews="NO" verifyAmbiguity="off" contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="XBy-qs-nDV">
+                                                <rect key="frame" x="0.0" y="0.0" width="367" height="427"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arms" translatesAutoresizingMaskIntoConstraints="NO" id="eeY-lf-qMo">
+                                                        <rect key="frame" x="63" y="8" width="240" height="128"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="128" id="n4l-7f-Q0S"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="body" translatesAutoresizingMaskIntoConstraints="NO" id="MbO-u7-hba">
+                                                        <rect key="frame" x="63" y="15" width="240" height="128"/>
+                                                    </imageView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eyebrows" translatesAutoresizingMaskIntoConstraints="NO" id="Irr-jZ-nIs">
+                                                        <rect key="frame" x="63" y="15" width="240" height="128"/>
+                                                    </imageView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ears" translatesAutoresizingMaskIntoConstraints="NO" id="sD9-gF-bkk">
+                                                        <rect key="frame" x="82" y="15" width="202" height="100"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="100" id="CFX-g7-NOg"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="glasses" translatesAutoresizingMaskIntoConstraints="NO" id="sxM-4E-vZ4">
+                                                        <rect key="frame" x="63" y="15" width="240" height="128"/>
+                                                    </imageView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eyes" translatesAutoresizingMaskIntoConstraints="NO" id="OUP-8z-hEB">
+                                                        <rect key="frame" x="63" y="15" width="240" height="128"/>
+                                                    </imageView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shoes" translatesAutoresizingMaskIntoConstraints="NO" id="xDt-4S-yp1">
+                                                        <rect key="frame" x="63" y="15" width="240" height="128"/>
+                                                    </imageView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hat" translatesAutoresizingMaskIntoConstraints="NO" id="7Si-z2-Ipb">
+                                                        <rect key="frame" x="63" y="15" width="240" height="128"/>
+                                                    </imageView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mouth" translatesAutoresizingMaskIntoConstraints="NO" id="QMm-6s-oHf">
+                                                        <rect key="frame" x="63" y="15" width="240" height="128"/>
+                                                    </imageView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nose" translatesAutoresizingMaskIntoConstraints="NO" id="yn9-GA-rSp">
+                                                        <rect key="frame" x="63" y="15" width="240" height="128"/>
+                                                    </imageView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mustache" translatesAutoresizingMaskIntoConstraints="NO" id="adG-JI-5gC">
+                                                        <rect key="frame" x="63" y="15" width="240" height="128"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="128" id="Jn5-1O-E0T"/>
+                                                            <constraint firstAttribute="width" constant="240" id="lhF-Qz-VLd"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstItem="adG-JI-5gC" firstAttribute="bottom" secondItem="QMm-6s-oHf" secondAttribute="bottom" id="2Kk-nN-ehm"/>
+                                                    <constraint firstItem="adG-JI-5gC" firstAttribute="bottom" secondItem="7Si-z2-Ipb" secondAttribute="bottom" id="5T5-oY-7B5"/>
+                                                    <constraint firstItem="adG-JI-5gC" firstAttribute="top" secondItem="XBy-qs-nDV" secondAttribute="top" constant="15" id="9jF-mo-dtw"/>
+                                                    <constraint firstItem="adG-JI-5gC" firstAttribute="top" secondItem="sxM-4E-vZ4" secondAttribute="top" id="AHH-ck-N98"/>
+                                                    <constraint firstItem="adG-JI-5gC" firstAttribute="leading" secondItem="XBy-qs-nDV" secondAttribute="leading" constant="63" id="CBb-nn-kWS"/>
+                                                    <constraint firstItem="adG-JI-5gC" firstAttribute="centerX" secondItem="XBy-qs-nDV" secondAttribute="centerX" id="EdI-jN-jdY"/>
+                                                    <constraint firstItem="adG-JI-5gC" firstAttribute="trailing" secondItem="QMm-6s-oHf" secondAttribute="trailing" id="HqP-hc-JAF"/>
+                                                    <constraint firstItem="adG-JI-5gC" firstAttribute="trailing" secondItem="sxM-4E-vZ4" secondAttribute="trailing" id="JRE-V7-a1x"/>
+                                                    <constraint firstItem="adG-JI-5gC" firstAttribute="trailing" secondItem="xDt-4S-yp1" secondAttribute="trailing" id="Jse-ke-WC4"/>
+                                                    <constraint firstItem="sD9-gF-bkk" firstAttribute="leading" secondItem="XBy-qs-nDV" secondAttribute="leading" constant="82" id="Kfb-dD-nZD"/>
+                                                    <constraint firstItem="eeY-lf-qMo" firstAttribute="top" secondItem="XBy-qs-nDV" secondAttribute="topMargin" id="LKw-z2-NBq"/>
+                                                    <constraint firstItem="adG-JI-5gC" firstAttribute="leading" secondItem="7Si-z2-Ipb" secondAttribute="leading" id="LSz-Ov-wZw"/>
+                                                    <constraint firstItem="adG-JI-5gC" firstAttribute="top" secondItem="xDt-4S-yp1" secondAttribute="top" id="Nrm-JN-LSj"/>
+                                                    <constraint firstItem="adG-JI-5gC" firstAttribute="top" secondItem="MbO-u7-hba" secondAttribute="top" id="PYC-0a-z8d"/>
+                                                    <constraint firstItem="adG-JI-5gC" firstAttribute="leading" secondItem="yn9-GA-rSp" secondAttribute="leading" id="Rrk-fw-HPl"/>
+                                                    <constraint firstItem="adG-JI-5gC" firstAttribute="trailing" secondItem="Irr-jZ-nIs" secondAttribute="trailing" id="SKl-bh-AhP"/>
+                                                    <constraint firstItem="adG-JI-5gC" firstAttribute="leading" secondItem="Irr-jZ-nIs" secondAttribute="leading" id="VWf-YW-4oZ"/>
+                                                    <constraint firstItem="adG-JI-5gC" firstAttribute="top" secondItem="OUP-8z-hEB" secondAttribute="top" id="Wj1-64-sOn"/>
+                                                    <constraint firstItem="adG-JI-5gC" firstAttribute="leading" secondItem="sxM-4E-vZ4" secondAttribute="leading" id="Wpz-qX-dYZ"/>
+                                                    <constraint firstItem="adG-JI-5gC" firstAttribute="trailing" secondItem="MbO-u7-hba" secondAttribute="trailing" id="ati-UF-L4Q"/>
+                                                    <constraint firstItem="adG-JI-5gC" firstAttribute="bottom" secondItem="OUP-8z-hEB" secondAttribute="bottom" id="clp-Jc-Fds"/>
+                                                    <constraint firstItem="adG-JI-5gC" firstAttribute="trailing" secondItem="7Si-z2-Ipb" secondAttribute="trailing" id="dDl-uQ-8jT"/>
+                                                    <constraint firstItem="adG-JI-5gC" firstAttribute="bottom" secondItem="xDt-4S-yp1" secondAttribute="bottom" id="dWn-Xd-bH7"/>
+                                                    <constraint firstItem="adG-JI-5gC" firstAttribute="trailing" secondItem="eeY-lf-qMo" secondAttribute="trailing" id="dzq-ls-qft"/>
+                                                    <constraint firstItem="adG-JI-5gC" firstAttribute="trailing" secondItem="yn9-GA-rSp" secondAttribute="trailing" id="eWF-iz-mwj"/>
+                                                    <constraint firstItem="adG-JI-5gC" firstAttribute="leading" secondItem="xDt-4S-yp1" secondAttribute="leading" id="few-6b-ENf"/>
+                                                    <constraint firstItem="sD9-gF-bkk" firstAttribute="top" secondItem="7Si-z2-Ipb" secondAttribute="top" id="idN-Eq-gTQ"/>
+                                                    <constraint firstItem="adG-JI-5gC" firstAttribute="top" secondItem="7Si-z2-Ipb" secondAttribute="top" id="jcw-SD-Ql4"/>
+                                                    <constraint firstItem="adG-JI-5gC" firstAttribute="bottom" secondItem="MbO-u7-hba" secondAttribute="bottom" id="mHb-os-wUp"/>
+                                                    <constraint firstItem="adG-JI-5gC" firstAttribute="leading" secondItem="QMm-6s-oHf" secondAttribute="leading" id="mLj-DN-wzT"/>
+                                                    <constraint firstItem="adG-JI-5gC" firstAttribute="bottom" secondItem="yn9-GA-rSp" secondAttribute="bottom" id="ncN-Wp-2gX"/>
+                                                    <constraint firstItem="adG-JI-5gC" firstAttribute="bottom" secondItem="Irr-jZ-nIs" secondAttribute="bottom" id="ot7-5M-fEL"/>
+                                                    <constraint firstItem="adG-JI-5gC" firstAttribute="top" secondItem="yn9-GA-rSp" secondAttribute="top" id="sg2-fr-ZGX"/>
+                                                    <constraint firstItem="adG-JI-5gC" firstAttribute="top" secondItem="QMm-6s-oHf" secondAttribute="top" id="u1Z-RA-bEq"/>
+                                                    <constraint firstItem="adG-JI-5gC" firstAttribute="leading" secondItem="eeY-lf-qMo" secondAttribute="leading" id="uUO-n6-7Tx"/>
+                                                    <constraint firstItem="adG-JI-5gC" firstAttribute="trailing" secondItem="OUP-8z-hEB" secondAttribute="trailing" id="wgQ-MW-hde"/>
+                                                    <constraint firstItem="adG-JI-5gC" firstAttribute="leading" secondItem="OUP-8z-hEB" secondAttribute="leading" id="y9f-U5-D9t"/>
+                                                    <constraint firstItem="adG-JI-5gC" firstAttribute="leading" secondItem="MbO-u7-hba" secondAttribute="leading" id="yDb-4V-q1j"/>
+                                                    <constraint firstItem="adG-JI-5gC" firstAttribute="top" secondItem="Irr-jZ-nIs" secondAttribute="top" id="ya0-7t-nrN"/>
+                                                    <constraint firstItem="sD9-gF-bkk" firstAttribute="centerX" secondItem="eeY-lf-qMo" secondAttribute="centerX" id="zBy-Mf-ftN"/>
+                                                    <constraint firstItem="adG-JI-5gC" firstAttribute="bottom" secondItem="sxM-4E-vZ4" secondAttribute="bottom" id="zja-Ji-0Tq"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="mc9-wx-AP2">
+                                        <rect key="frame" x="94.5" y="447" width="186.5" height="20"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alter the Mr. Potatohead" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="on1-Er-01f">
+                                                <rect key="frame" x="0.0" y="0.0" width="186.5" height="20"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="N23-Ca-ur9"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="fi1-LP-zYN">
+                                        <rect key="frame" x="50" y="467" width="275" height="180"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Mvs-WV-QG5">
+                                                <rect key="frame" x="0.0" y="0.0" width="143" height="180"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="vB3-F3-293">
+                                                        <rect key="frame" x="0.0" y="0.0" width="84.5" height="40"/>
+                                                        <subviews>
+                                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="awK-jb-z4n">
+                                                                <rect key="frame" x="0.0" y="0.0" width="51" height="40"/>
+                                                                <accessibility key="accessibilityConfiguration" identifier="Hat"/>
+                                                                <connections>
+                                                                    <action selector="potatoToggles:" destination="0CA-a7-YoE" eventType="valueChanged" id="ZhE-F3-d1X"/>
+                                                                </connections>
+                                                            </switch>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xdH-VT-j1q">
+                                                                <rect key="frame" x="57" y="0.0" width="27.5" height="40"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="7Ms-g3-Rbk">
+                                                        <rect key="frame" x="0.0" y="44" width="131" height="31"/>
+                                                        <subviews>
+                                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3ea-ki-NIw">
+                                                                <rect key="frame" x="0.0" y="0.0" width="51" height="31"/>
+                                                                <accessibility key="accessibilityConfiguration" identifier="Eyebrows"/>
+                                                                <connections>
+                                                                    <action selector="potatoToggles:" destination="0CA-a7-YoE" eventType="valueChanged" id="kFn-Bh-aUV"/>
+                                                                </connections>
+                                                            </switch>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Eyebrows" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZLf-ok-g8D">
+                                                                <rect key="frame" x="57" y="0.0" width="74" height="31"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ZTS-jD-txQ">
+                                                        <rect key="frame" x="0.0" y="79" width="97" height="31"/>
+                                                        <subviews>
+                                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="N86-la-Stb">
+                                                                <rect key="frame" x="0.0" y="0.0" width="51" height="31"/>
+                                                                <accessibility key="accessibilityConfiguration" identifier="Nose"/>
+                                                                <connections>
+                                                                    <action selector="potatoToggles:" destination="0CA-a7-YoE" eventType="valueChanged" id="W5v-E2-MXG"/>
+                                                                </connections>
+                                                            </switch>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nose" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RbH-ge-Van">
+                                                                <rect key="frame" x="57" y="0.0" width="40" height="31"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="CPe-gi-5VM">
+                                                        <rect key="frame" x="0.0" y="114" width="142.5" height="31"/>
+                                                        <subviews>
+                                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="F9Y-Fy-ubg">
+                                                                <rect key="frame" x="0.0" y="0.0" width="51" height="31"/>
+                                                                <accessibility key="accessibilityConfiguration" identifier="Moustache"/>
+                                                                <connections>
+                                                                    <action selector="potatoToggles:" destination="0CA-a7-YoE" eventType="valueChanged" id="1DV-lT-B6e"/>
+                                                                </connections>
+                                                            </switch>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Moustache" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pGR-pA-y3c">
+                                                                <rect key="frame" x="57" y="0.0" width="85.5" height="31"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="8vx-ZL-5LO">
+                                                        <rect key="frame" x="0.0" y="149" width="97.5" height="31"/>
+                                                        <subviews>
+                                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jge-ef-Jue">
+                                                                <rect key="frame" x="0.0" y="0.0" width="51" height="31"/>
+                                                                <accessibility key="accessibilityConfiguration" identifier="Arms"/>
+                                                                <connections>
+                                                                    <action selector="potatoToggles:" destination="0CA-a7-YoE" eventType="valueChanged" id="r2i-VR-76W"/>
+                                                                </connections>
+                                                            </switch>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Arms" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w4U-o4-AHL">
+                                                                <rect key="frame" x="57" y="0.0" width="40.5" height="31"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="142.5" id="WtW-1K-3WR"/>
+                                                    <constraint firstItem="7Ms-g3-Rbk" firstAttribute="top" secondItem="Mvs-WV-QG5" secondAttribute="top" constant="44" id="aHh-uN-QVq"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Uhv-Oc-3IV">
+                                                <rect key="frame" x="158" y="0.0" width="117" height="180"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="N1Y-Jk-nMf">
+                                                        <rect key="frame" x="0.0" y="0.0" width="93.5" height="40"/>
+                                                        <subviews>
+                                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vwv-T8-HVL">
+                                                                <rect key="frame" x="0.0" y="0.0" width="51" height="40"/>
+                                                                <accessibility key="accessibilityConfiguration" identifier="Eyes"/>
+                                                                <connections>
+                                                                    <action selector="potatoToggles:" destination="0CA-a7-YoE" eventType="valueChanged" id="rrb-5s-ZYP"/>
+                                                                </connections>
+                                                            </switch>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Eyes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M2i-6c-ZuW">
+                                                                <rect key="frame" x="57" y="0.0" width="36.5" height="40"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="c4R-By-hGO">
+                                                        <rect key="frame" x="0.0" y="44" width="117" height="31"/>
+                                                        <subviews>
+                                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LSb-jQ-mGz">
+                                                                <rect key="frame" x="0.0" y="0.0" width="51" height="31"/>
+                                                                <accessibility key="accessibilityConfiguration" identifier="Glasses"/>
+                                                                <connections>
+                                                                    <action selector="potatoToggles:" destination="0CA-a7-YoE" eventType="valueChanged" id="O4n-qQ-SDa"/>
+                                                                </connections>
+                                                            </switch>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Glasses" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lFr-Pu-Ube">
+                                                                <rect key="frame" x="57" y="0.0" width="60" height="31"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Uap-iU-llo">
+                                                        <rect key="frame" x="0.0" y="79" width="106.5" height="31"/>
+                                                        <subviews>
+                                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KVT-c1-0n0">
+                                                                <rect key="frame" x="0.0" y="0.0" width="51" height="31"/>
+                                                                <accessibility key="accessibilityConfiguration" identifier="Mouth"/>
+                                                                <connections>
+                                                                    <action selector="potatoToggles:" destination="0CA-a7-YoE" eventType="valueChanged" id="qGm-pZ-elx"/>
+                                                                </connections>
+                                                            </switch>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mouth" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nzt-zW-GDl">
+                                                                <rect key="frame" x="57" y="0.0" width="49.5" height="31"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Sf9-Yv-Nnh">
+                                                        <rect key="frame" x="0.0" y="114" width="90.5" height="31"/>
+                                                        <subviews>
+                                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rBR-8I-KoU">
+                                                                <rect key="frame" x="0.0" y="0.0" width="51" height="31"/>
+                                                                <accessibility key="accessibilityConfiguration" identifier="Ears"/>
+                                                                <connections>
+                                                                    <action selector="potatoToggles:" destination="0CA-a7-YoE" eventType="valueChanged" id="bhZ-RV-IqX"/>
+                                                                </connections>
+                                                            </switch>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ears" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wLN-Ac-v1R">
+                                                                <rect key="frame" x="57" y="0.0" width="33.5" height="31"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="dGo-95-Nh7">
+                                                        <rect key="frame" x="0.0" y="149" width="105" height="31"/>
+                                                        <subviews>
+                                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MTj-wH-DgJ">
+                                                                <rect key="frame" x="0.0" y="0.0" width="51" height="31"/>
+                                                                <accessibility key="accessibilityConfiguration" identifier="Shoes"/>
+                                                                <connections>
+                                                                    <action selector="potatoToggles:" destination="0CA-a7-YoE" eventType="valueChanged" id="hOn-Lz-1Az"/>
+                                                                </connections>
+                                                            </switch>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shoes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x2D-uC-7Os">
+                                                                <rect key="frame" x="57" y="0.0" width="48" height="31"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="c4R-By-hGO" firstAttribute="top" secondItem="Uhv-Oc-3IV" secondAttribute="top" constant="44" id="B1D-hx-JOF"/>
+                                                    <constraint firstAttribute="width" constant="117" id="hT6-fg-YtW"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="180" id="7KR-tF-zCZ"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qmv-XZ-0F4" firstAttribute="top" secondItem="bUe-2s-3Dz" secondAttribute="bottom" id="0IF-4r-QfS"/>
+                            <constraint firstItem="bUe-2s-3Dz" firstAttribute="leading" secondItem="vBg-sq-3kq" secondAttribute="leading" id="2Fz-RR-daa"/>
+                            <constraint firstItem="bUe-2s-3Dz" firstAttribute="top" secondItem="vBg-sq-3kq" secondAttribute="top" constant="20" id="KGr-Ol-GWQ"/>
+                            <constraint firstAttribute="trailing" secondItem="bUe-2s-3Dz" secondAttribute="trailing" id="fYg-9m-JAc"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="potatoArms" destination="eeY-lf-qMo" id="Y4L-sG-eN9"/>
+                        <outlet property="potatoEars" destination="sD9-gF-bkk" id="or7-00-gQv"/>
+                        <outlet property="potatoEyebrows" destination="Irr-jZ-nIs" id="WBS-NF-hN1"/>
+                        <outlet property="potatoEyes" destination="OUP-8z-hEB" id="Icf-jP-QLu"/>
+                        <outlet property="potatoGlasses" destination="sxM-4E-vZ4" id="jfT-2c-YSQ"/>
+                        <outlet property="potatoHat" destination="7Si-z2-Ipb" id="tYI-8K-RJv"/>
+                        <outlet property="potatoMoustache" destination="adG-JI-5gC" id="BCx-1G-j8y"/>
+                        <outlet property="potatoMouth" destination="QMm-6s-oHf" id="mWa-nw-fQj"/>
+                        <outlet property="potatoNose" destination="yn9-GA-rSp" id="gBS-l1-PdQ"/>
+                        <outlet property="potatoShoes" destination="xDt-4S-yp1" id="9p5-aE-Ugz"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-348" y="239.73013493253376"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="arms" width="367" height="428"/>
+        <image name="body" width="367" height="428"/>
+        <image name="ears" width="367" height="428"/>
+        <image name="eyebrows" width="367" height="428"/>
+        <image name="eyes" width="367" height="428"/>
+        <image name="glasses" width="367" height="428"/>
+        <image name="hat" width="367" height="428"/>
+        <image name="mouth" width="367" height="428"/>
+        <image name="mustache" width="367" height="428"/>
+        <image name="nose" width="367" height="428"/>
+        <image name="shoes" width="367" height="428"/>
+    </resources>
 </document>
